@@ -1,100 +1,262 @@
-<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
-<html lang="en"> <!-- Root tag, lang="en" specifies page language as English -->
-
-<head> <!-- Head section (metadata, title, links, styles go here) -->
-    <meta charset="UTF-8"> <!-- Defines character encoding (UTF-8 supports all characters) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive on mobile devices -->
-    <title>BIO PAGE</title> <!-- Title of the webpage (shows on browser tab) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resturant Menu">
+    <meta name="author" content="Restaurant Menu">
+    <title>FREINDS - Restaurant Menu</title>
 </head>
-
-<body> <!-- Body section (main visible content of the page) -->
-
-    <!-- Heading 1 (largest heading), align="center" centers the text -->
-    <h1 align="center"><b>My Bio Page</b></h1> 
-    
-    <hr> <!-- Horizontal line separator -->
-
-    <!-- Correct way to insert image is <img> (not <image>) -->
-    <!-- src = image path, alt = alternative text if image not loads -->
-    <!-- height & width define size of image -->
-    <img src="images/myimage.jpg" 
-         alt="Vineet Kumar"
-         height="200px"
-         width="200px">
-
-    <hr> <!-- Horizontal line -->
-
-    <!-- Heading 2 for "About Me" section -->
-    <h2>About Me</h2>
-
-    <!-- Paragraph (p) with <b> bold text and <br> line break -->
-    <p>Hello! My self <b>Vineet Kumar</b>. <br>
-       I am a FrontEnd Developer. I am from Bihar. 
-       I am pursuing Graduation from INMANTEC Institution, Ghaziabad.
-    </p>
-
-    <hr>
-
-    <!-- Heading 3 -->
-    <h3>Personal Information</h3>
-
-    <!-- Table starts -->
-    <!-- border="1" gives table border -->
-    <!-- cellpadding="8" gives padding inside cells -->
-    <!-- cellspacing="0" removes extra spacing between cells -->
-    <table border="1" cellpadding="8" cellspacing="0">
-        <!-- Table row -->
-        <tr>
-            <!-- Table header cell -->
-            <th>Field</th>
-            <th>Details</th>
-        </tr>
-        <tr>
-            <td>Name</td> <!-- Normal table cell -->
-            <td>Vineet Kumar</td>
-        </tr>
-        <tr>
-            <td>Age</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Education</td>
-            <td>BCA (Bachelor of Computer Applications)</td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <!-- <a> is anchor (hyperlink) -->
-            <!-- href="mailto:" opens mail client -->
-            <td><a href="mailto:vk77@gmail.com">Gmail</a></td>
-        </tr>
-    </table>
-    
-    <hr>
-
-    <h3>My Hobbies</h3>
-    <!-- Unordered list (bullet points) -->
-    <ul>
-        <li>Reading Books</li> <!-- List item -->
-        <li>Playing Games</li>
-        <li>Travelling</li>
-        <li>Dance</li>
-    </ul>
-
-    <hr>
-
-    <h3>Find Me Online</h3>
-    <ul>
-        <!-- target="_blank" opens link in new tab -->
-        <li><a href="http://www.instagram.com" target="_blank">Instagram Profile</a></li>
-        <!-- target="_parent" opens in parent frame (iframes case) -->
-        <li><a href="http://www.github.com" target="_parent">Github Profile</a></li>
-    </ul>
-
-    <hr>
-
-    <!-- Paragraph with align="center" (text centered) -->
-    <!-- &copy; is HTML entity for © symbol -->
-    <p align="center">&copy; 2025 My Bio Page</p>
-
+<body>
+    <header align="center"><strong>FREINDS</strong>
+    <p align="center">Enjoy the food with your loved ones</p>
+    <nav>
+        <a href="#Starter">Starters</a>
+        <a href="#Mains">Mains</a>
+        <a href="Desserts">Desserts</a>
+        <a href="Drinks">Drinks</a>
+    </nav>
+    </header>
+    <main>
+    <section>
+        <h2>Chef's Special</h2>
+        <figure>
+            <img src="images\grilled salmon.jpeg"
+            alt="Chef's Special Dish"
+            height=400px
+            width="500px">
+            <figcaption>Grilled Salmon with Lemon Butter</figcaption>
+            </figure>
+            <p>A perfecly seared salmon fillet served with creamy lemon butter sauce,sauteed greens,and roasted potatoes.
+            </p>
+            <p><strong>Price :</strong> &#8377; 800 / $10</p>
+    </section>
+    <section id="Starters"><h2>Starters</h2>
+    <article>
+        <h3>Tomato Basil Soup</h3>
+        <figure>
+            <img src="images\tomato basil soup.jpeg"
+            alt="Tomato Basil Soup"
+            height=300px
+            width=300px>
+            <figcaption>Tomato Basil Soup</figcaption>
+        </figure>
+        <p>Fresh tomatoes blended with basil and cream.</p>
+        <p><strong>Price :</strong> &#8377; 400 / $5</p>
+        <p>Badges: V, GF</p>
+    </article>
+    <article>
+        <h3>Garlic Bread</h3>
+        <figure>
+            <img src="images\garlic bread.jpeg"
+            alt="Garlic Bread"
+            height=300px
+            width=300px>
+            <figcaption>Garlic Caption</figcaption>
+        </figure>
+        <p>Toasted bread topped with garlic butter and herbs.</p>
+        <p><strong>Price :</strong> &#8377; 200 / $2</p>
+        <p>Badges: V</p>
+    </article>
+    <article>
+        <h3>Chicken Tikka</h3>
+        <figure>
+            <img src="images\chicken tikka.jpeg"
+            alt="Chicken Tikka"
+            height=300px
+            width=300px>
+            <figcaption>Chicken Tikka</figcaption>
+        </figure>
+        <p>Juicy chicken pieces marinated in Indian spices.</p>
+        <p><strong>Price :</strong> &#8377; 300 / $4</p>
+        <p>Badges: GF</p>
+    </article>
+    <article>
+        <h3>Bruschetta</h3>
+        <figure>
+            <img src="images\Bruschetta.jpeg"
+            alt="Bruschetta"
+            height=300px
+            width=300px>
+            <figcaption>Bruschetta</figcaption>
+        </figure>
+        <p>Grilled bread with tomatoes, basil, and olive oil.</p>
+        <p><strong>Price :</strong> &#8377; 220 / $3</p>
+        <p>Badges: GF</p>
+    </article>
+</section>
+<section id="Mains">
+    <h2>Mains</h2>
+    <article>
+        <h3>Paneer Butter Masala</h3>
+        <figure>
+            <img src="images\PTM.jpeg"
+            alt="Paneer Butter Masala"
+            height=300px
+            width=300px>
+            <figcaption>Paneer Butter Masala</figcaption>
+        </figure>
+        <p>Cottage cheese in a creamy tomato-based gravy.</p>
+        <p><strong>Price :</strong> &#8377; 400 / $5</p>
+        <p>Badges: V</p>
+    </article>
+    <article>
+        <h3>Chicken Biryani</h3>
+        <figure>
+            <img src="images\ch biryani.jpeg"
+            alt="Chicken Biryani"
+            height=300px
+            width=300px>
+            <figcaption>Chicken Biryani</figcaption>
+        </figure>
+        <p>Fragrant rice cooked with chicken and spices.</p>
+        <p><strong>Price :</strong> &#8377; 450 / $6</p>
+        <p>Badges: GF</p>
+    </article>
+    <article>
+        <h3>Margherita Pizza</h3>
+        <figure>
+            <img src="images\M pizza.jpeg"
+            alt="Margherita Pizza"
+            height=300px
+            width=300px>
+            <figcaption>Margherita Pizza</figcaption>
+        </figure>
+        <p>Classic pizza with tomato, mozzarella, and basil.</p>
+        <p><strong>Price :</strong> &#8377; 380 / $5</p>
+        <p>Badges: V</p>
+    </article>
+    <article>
+        <h3>Grilled Steak</h3>
+        <figure>
+            <img src="images\g steak.jpeg"
+            alt="Grilled Steak"
+            height=300px
+            width=300px>
+            <figcaption>Grilled Steak</figcaption>
+        </figure>
+        <p>Served with mashed potatoes and seasonal veggies.</p>
+        <p><strong>Price :</strong> &#8377; 800 / $10</p>
+        <p>Badges: GF</p>
+    </article>
+</section>
+<section id="Desserts">
+    <h2>Desserts</h2>
+    <article>
+        <h3>Chocolate Lava Cake</h3>
+        <figure>
+            <img src="images\C lava cake.jpeg"
+            alt="Chocolate Lava Cake"
+            height=300px
+            width=300px>
+            <figcaption>Chocolate Lava Cake</figcaption>
+        </figure>
+        <p>Warm chocolate cake with molten center.</p>
+        <p><strong>Price :</strong> &#8377; 250 / $3</p>
+        <p>Badges: V</p>
+    </article>
+     <article>
+        <h3>Cheesecake</h3>
+        <figure>
+            <img src="images\cheese cake.jpeg"
+            alt="Cheesecake"
+            height=300px
+            width=300px>
+            <figcaption>Cheesecake</figcaption>
+        </figure>
+        <p>Creamy Cheesecake with berry topping.</p>
+        <p><strong>Price :</strong> &#8377; 300 / $4</p>
+        <p>Badges: V</p>
+    </article>
+    <article>
+        <h3>Fruit Salad</h3>
+        <figure>
+            <img src="images\fruit salad.jpeg"
+            alt="Fruit Salad"
+            height=300px
+            width=300px>
+            <figcaption>Fruit Salad</figcaption>
+        </figure>
+        <p>Fresh seasonal fruits served with honey dizzle.</p>
+        <p><strong>Price :</strong> &#8377; 180 / $2</p>
+        <p>Badges: VG, GF</p>
+    </article>
+    <article>
+        <h3>Gulab Jamun</h3>
+        <figure>
+            <img src="images\gulab jamun.jpeg"
+            alt="Gulab Jamun"
+            height=300px
+            width=300px>
+            <figcaption>Gulab Jamun</figcaption>
+        </figure>
+        <p>Soft milk dumplings soaked in sugar syrup.</p>
+        <p><strong>Price :</strong> &#8377; 350 / $4.5</p>
+        <p>Badges: V</p>
+    </article>
+</section>
+<section id="Drinks">
+    <h2>Drinks</h2>
+     <article>
+        <h3>Mango Lassi</h3>
+        <figure>
+            <img src="images\m lassi.jpeg"
+            alt="Mango Lassi"
+            height=300px
+            width=300px>
+            <figcaption>Mango Lassi</figcaption>
+        </figure>
+        <p>Refreshing yogurt drink with mango flavor.</p>
+        <p><strong>Price :</strong> &#8377; 120 / $1.5</p>
+        <p>Badges: V</p>
+    </article>
+     <article>
+        <h3>Fresh Lime Soda</h3>
+        <figure>
+            <img src="images\Lime soda.jpeg"
+            alt="Fresh Lime Soda"
+            height=300px
+            width=300px>
+            <figcaption>Fresh Lime Soda</figcaption>
+        </figure>
+        <p>Lime juice mixed with soda and sugar/salt.</p>
+        <p><strong>Price :</strong> &#8377; 80 / $1</p>
+        <p>Badges: VG ,GF</p>
+    </article>
+     <article>
+        <h3>Cold Coffee</h3>
+        <figure>
+            <img src="images\cold coffee.jpeg"
+            alt="Cold Coffee"
+            height=300px
+            width=300px>
+            <figcaption>Cold Coffee</figcaption>
+        </figure>
+        <p>Chilled coffee blended with milk and ice cream.</p>
+        <p><strong>Price :</strong> &#8377; 150 / $2</p>
+        <p>Badges: V</p>
+    </article>
+     <article>
+        <h3>Masala Chai</h3>
+        <figure>
+            <img src="images\masala chai.jpeg"
+            alt="Masala Chai"
+            height=300px
+            width=300px>
+            <figcaption>Masala Chai</figcaption>
+        </figure>
+        <p>Indian spiced tea with milk and cardamom.</p>
+        <p><strong>Price :</strong> &#8377; 60 / $0.8</p>
+        <p>Badges: V</p>
+    </article>
+</section>
+</main>
+<hr>
+    <footer align="center">
+      <p><strong>Contact Us:</strong>+91-9876543210 |info@FREINDS.com</p>
+      <p>123 Food Street,Bombay,India</p>
+      <p>Open: Mon-Sun, 11:00 AM - 11:00 PM</p>
+      <p>Reservations recommended for weekends.</p>
+    </footer>
 </body>
 </html>
